@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+<body>
+  <button>hello</button>
+  <button class="js-call">Second button</button>
+
+    
+  <script>
+    //changes the above button name
+    console.log(document.querySelector('button').innerHTML='change');
+
+    const callElement = document.querySelector('.js-call');
+    console.log(callElement);
+
+    //change webpage to 'hello'
+   //document.body.innerHTML = 'hello';
+
+
+   //change name of title 
+   document.title='(322)Thank you jesus';
+   //document.title = 'change';
+
+   //This gets our body html inside javascript
+   //console.log(document.body);
+
+
+   //The innerHTML controls all the HTML in our body
+   //console.log(document.body.innerHTML);
+
+   //document.body.innerHTML='<button>Good jod!</button>';
+  </script>
+</body>
+</html>

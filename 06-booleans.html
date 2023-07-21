@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booleans</title>
+</head>
+<body>
+  <script>
+     true
+     false
+
+     console.log(3>5);
+     console.log(5 == '10.0')
+
+     if(true){
+       console.log('hello');
+     } else {
+      console.log('no')
+     }
+    // A code checking if someone is old enough to drive
+    const age = 10;
+    const goodDriveAge = 16;
+    const almost = 15;
+      if (age >= goodDriveAge){
+        console.log("You can drive");
+      } else if (age >= 5){
+        console.log('Almost there!');
+      } else {
+        console.log(`No! you cannot drive`);
+      }
+
+      if(5){
+        //this a falsey value it behave like false
+        console.log('truthy');
+      }
+        
+      if(0){
+        //this called a truthy value it behave like true
+        console.log('truthy');
+      }
+
+      const result = 0 ? 'truthy': 'falsy';
+      console.log(result);
+
+      const message = 1 && 'hello';
+      console.log(message);
+
+      const money = undefined || 'USD';
+      console.log(money);
+  </script>
+</body>
+</html>
