@@ -1,0 +1,36 @@
+body{
+  background-color: rgb(25, 25, 25);
+  color: white;
+  font-family: Arial;
+}
+
+.title{
+  font-size: 30px;
+  font-weight: bold;
+
+}
+
+.move-icons{
+ height: 50px;
+}
+
+.moves-butt{
+  background-color: transparent;
+  border: 3px solid white;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.score{
+  margin-top: 70px;
+}
+
+.reset-butt{
+  background-color: white;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+}
