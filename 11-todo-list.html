@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <style>
+
+    .container{
+      background-color: orange;
+      width: 45%;
+      height: 40%;
+      margin: 0 auto;
+    }
+
+    h1{
+      text-align: center;
+    }
+    .name-input{
+      padding: 10px;
+      border: 2px solid gray;
+      border-radius: 20px;
+      
+    }
+
+    .due-date-input{
+      /* padding: 10px; */
+      border-radius: 10px;
+    }
+    .todo-btn{
+       background-color: black;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+
+    }
+
+    .delete-btn2{
+      background-color: black;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    } 
+
+    .todo-grid,
+    .grid-combine
+    {
+      display: grid;
+      grid-template-columns:200px 200px 100px;
+      column-gap: 10px;
+      row-gap: 10px;
+      align-items: center;
+    }
+
+    .grid-combine{
+      margin-bottom: 10px;
+      align-items: stretch;
+    }
+
+
+    body{
+      font-family: arial;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1>Todo List</h1>
+  <div class="grid-combine">
+  <input type="text" placeholder="Todo name" class="js-input-name name-input">
+  <input type="date" class="js-due-date-input due-date-input">
+  <button onclick="
+    addTodo();
+  " class="todo-btn">Add</button>
+  </div>
+
+  <div class="js-todo-list todo-grid"></div>
+</div>
+  <script src="scripts/11-todo-list.js"></script>
+</body>
+</html>

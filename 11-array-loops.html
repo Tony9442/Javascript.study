@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays and Loops</title>
+</head>
+<body>
+  <script>
+    /*const myArray = [10, 20, 30]
+    console.log(myArray[0]);
+
+    myArray[0] = 100;
+    console.log(myArray);
+
+    myArray.push(100);
+    console.log(myArray);
+
+    const myArr = [1, true, 'remove', {name: 'car'},[1, 2]]
+
+    //console.log(myArr[3].name);
+
+    myArr.splice(2, 1);
+    console.log(myArr);*/
+
+    /*let i = 1;
+
+    while (i <= 15) {
+      
+     console.log(i);
+     //add 1 when loop till the condtion is false then stop.
+     i += 1;
+    }
+   //standard loop
+    for(let i = 1; i <= 15; i++){
+       console.log(i);
+    }
+
+    //non-standard loop
+
+    let randomNumber = 0;
+
+    while(randomNumber < 0.5){
+      randomNumber = Math.random();
+    }
+    console.log(randomNumber);
+
+
+    //looping through an Array
+    const toDoList = [
+     'Make dinner','Play game','Go to gym','Go to church','Code'
+    ];
+//i here is a short form for index
+    for (let i = 0; i < toDoList.length; i++){
+      toDoList[5]='Taking my bath';
+      const value = toDoList[i];
+      console.log(value);
+    }*/
+
+    //Accumulator pattern
+    // const nums = [1, 2, 3];
+    // let total = 0;
+
+    // for (let i = 0; i < nums.length; i++) {
+    //   const num = nums[i];
+    //   total += num;
+    
+    // }
+
+    // console.log(total);
+
+    // const numDouled = [];
+
+    // for (let i = 0; i < nums.length; i++) {
+    //   const num = nums[i];
+    //   numDouled.push(num * 2);
+    // }
+    // console.log(numDouled);
+
+    //Like Objects Array are also known as Reference
+
+    let array = [1,2,3];
+    //without the slice() the two variable will point to the same array in memory to avoid it we add slice().
+    let array1 = array.slice();
+    array1.push(5);
+    console.log(array1);
+    console.log(array);
+
+    //SHORTCUT CALLED DESTRUCTURING
+     //Say we want get the value out of an array and save in variable.
+
+     //saves 1 inside fristValue and 2 in secondValue
+    const [fristValue,secondValue] = [1, 2, 3];
+    console.log(fristValue,secondValue);
+
+    //MORE DETAILS ABOUT LOOPS 
+    //Loops have two details called
+
+    //1 Break= break lets us exit a loop early EXAMPLE this loop is meant stop at 10 but it will stop at 8 cause by BREAK.
+     for (let i = 0; i < 10; i++) {
+       if(i === 8) {
+         break;
+      }
+    }
+    //2 Continue = continue lets us skip one itration of loop or one run of the loop EXAMPLE This skips 4 and keeps counting cause by CONTINUE.
+    for (let i = 1; i <= 10; i++) {
+      if (i % 3 === 0){
+        continue;
+      }
+      console.log(i);
+      if(i === 8) {
+        break;
+      }
+    }
+
+    let i = 1;
+
+    while (i <= 10) {
+      //The if statement helps us skip numbers that are divisible by 3(3,6,9)
+      if (i % 3 === 0) {
+        //So we have to do this increment step manually when using CONTINUE in while loop,so the i++ here is to avoid infinite loop.
+        i++;
+        //In while loop CONTINUE will skip the increment step and it will cause an infinite loop.
+      continue;
+      }
+     console.log(i);
+     i++;
+    }
+
+     //HOW TO USE LOOPS WITH FUNCTIONS
+     function doubleNumber(nums){
+     const numDouled = [];
+
+        for (let i = 0; i < nums.length; i++) {
+          const num = nums[i];
+          numDouled.push(num * 2);
+        }
+        console.log(numDouled);
+     }
+     doubleNumber([5,5,5,]);
+     doubleNumber([10,10,10]);
+
+
+  </script>
+</body>
+</html>
